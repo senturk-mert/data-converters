@@ -9,7 +9,7 @@
 
 `default_nettype none
 
-module tt_um_senturk_mert_tinyquant (
+module tt_um_tinyquant (
     input  wire       VGND,
     input  wire       VDPWR,    // 3.3v core power supply
     input  wire [7:0] ui_in,    // Dedicated inputs

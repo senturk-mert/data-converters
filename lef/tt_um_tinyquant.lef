@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_senturk_mert_tinyquant
+MACRO tt_um_tinyquant
   CLASS BLOCK ;
-  FOREIGN tt_um_senturk_mert_tinyquant ;
+  FOREIGN tt_um_tinyquant ;
   ORIGIN 0.000 0.000 ;
   SIZE 346.640 BY 325.360 ;
   PIN clk
@@ -435,5 +435,5 @@ MACRO tt_um_senturk_mert_tinyquant
         RECT 152.780 5.000 154.780 320.360 ;
     END
   END VGND
-END tt_um_senturk_mert_tinyquant
+END tt_um_tinyquant
 END LIBRARY
