@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "TinyQuantizer: SAR, Noise Shaping SAR, ΔΣ Modulator"
+  title:        "Trinity: SAR, Noise Shaping SAR, ΔΣ Modulator"
   author:       "Mert Senturk"
   discord:      ""
   description:  "One 10 bit Asynchronous SAR ADC with Noise Shaping and a 2nd Order ΔΣ Modulator in the smallest analog tile"
