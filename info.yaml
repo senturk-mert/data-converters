@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "TinyQuant: SAR, noise-shaping SAR and delta-sigma ADC"
+  title:        "TinyQuantizer: SAR, Noise Shaping SAR, ΔΣ Modulator"
   author:       "Mert Senturk"
   discord:      ""
-  description:  "10-bit async SAR ADC with switchable passive noise shaping, plus a 2nd-order SC delta-sigma modulator"
+  description:  "One 10 bit Asynchronous SAR ADC with Noise Shaping and a 2nd Order ΔΣ Modulator in the smallest analog tile"
   language:     "Analog"
   clock_hz:     5000000
 
