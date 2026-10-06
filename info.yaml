@@ -1,0 +1,62 @@
+# Tiny Tapeout project information
+project:
+  title:        "TinyQuant: SAR, noise-shaping SAR and delta-sigma ADC"
+  author:       "Mert Senturk"
+  discord:      ""
+  description:  "10-bit async SAR ADC with switchable passive noise shaping, plus a 2nd-order SC delta-sigma modulator"
+  language:     "Analog"
+  clock_hz:     5000000
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "1x2"          # Valid values for analog projects: 1x2, 2x2, 3x2, 4x2
+
+  # How many analog pins does your project use?
+  analog_pins: 2        # Valid values: 0 to 6
+  uses_vapwr: false     # Set to true if your project uses the second analog power supply (VAPWR) in addition to VDPWR (3.3V)
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_senturk_mert_tinyquant"
+
+  # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # ui
+  ui[0]: "MODE (0 = SAR, 1 = delta-sigma)"
+  ui[1]: "NS_EN (SAR noise shaping on)"
+  ui[2]: "DSM bias trim 0"
+  ui[3]: "DSM bias trim 1"
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+  # uo
+  uo[0]: "SAR D2 / DSM bitstream"
+  uo[1]: "SAR D3 / DSM phase-1 monitor"
+  uo[2]: "SAR D4"
+  uo[3]: "SAR D5"
+  uo[4]: "SAR D6"
+  uo[5]: "SAR D7"
+  uo[6]: "SAR D8"
+  uo[7]: "SAR D9 (MSB)"
+  # uio
+  uio[0]: "SAR D0 (output)"
+  uio[1]: "SAR D1 (output)"
+  uio[2]: "SAR CONV busy (output)"
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+  # ua
+  ua[0]: "VINP (analog input +)"
+  ua[1]: "VINN (analog input -)"
+  ua[2]: ""
+  ua[3]: ""
+  ua[4]: ""
+  ua[5]: ""
+
+# Do not change!
+yaml_version: 6
