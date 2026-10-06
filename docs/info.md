@@ -11,7 +11,7 @@ input (ua[0] = VINP, ua[1] = VINN):
   capacitor) switching. Two MOM capacitor DACs (512 units of 2 fF per side, calibrated by
   extraction), a StrongARM comparator and self-timed bit cycling: the clock only sets the
   sampling instant (falling edge of `clk`), the ten decisions run on internal timing
-  (47 ns typical after layout).
+  (49 ns typical after layout).
 * **Noise-shaping SAR (NS_EN = 1).** The same core with a passive first-order noise shaper:
   after the last decision a half-LSB step centres the residue, which is then charge-shared onto
   an integration capacitor (about 4x the DAC capacitance). A second comparator input pair with 4x
